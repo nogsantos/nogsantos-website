@@ -1,0 +1,83 @@
+body
+{
+	background:#EDF4FE url(../img/background.jpg) top left repeat-x fixed;
+}
+.tableDad
+{
+	margin:auto;
+}
+.warning
+{
+	color:#006666;
+	font-weight:bold;
+	text-transform:capitalize;
+	font-family:"Times New Roman", Times, serif;
+	font-size:15px;
+}
+.inputTransparente
+{
+	background:none;
+	border:none;
+}
+input
+{
+	font-family:"Times New Roman", Times, serif;
+}
+fieldset
+{
+	border-color:#0000FF;
+}
+legend
+{
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+	color:#336666;
+}
+.table
+{
+	font-family:"Times New Roman", Times, serif;
+	font-size:15px;
+}
+/*--------------------Trans Div ------------------------*/
+.transDiv
+{
+	top:0px;
+	left:0px;
+	position:absolute;
+	filter: alpha(opacity=75); /*INTERNET EXPLORER*/
+	-moz-opacity:0.75; /* para o FireFox */
+	opacity:0.75; /* para o outros Navegadores */
+	background:#000000;
+	cursor:wait;
+}
+.divCentral
+{
+	background:#EDF4FE url(../img/background.jpg) top left repeat-x fixed;
+	border-style:double;
+	width:700px;
+	height:600px;
+	position:relative;
+	top:15px;
+	cursor:auto;
+	overflow:auto;
+}
+.divAbsolute
+{
+	background:none;
+	position:absolute;
+	top:0px;
+}
+/*--------------------Trans Div ------------------------*/
+/*--------------------------Focus Blur----------------- */
+.onFocus
+{
+ background-color:#FFFFCC;
+ border-color:#000000;
+ border-bottom-style:solid;
+}
+.onBlur
+{
+ background-color:;
+ border-color:;
+}
+/*--------------------------Focus Blur----------------- */
