@@ -1,0 +1,235 @@
+/* 
+    Document   : estiloPrinciapal
+    Created on : 03/01/2011, 14:12:48
+    Author     : fabricio
+    Description: Folha de estilo principal
+*/
+body{
+    background-image: url('../imagens/bg-header.png');
+    background-position: top;
+    background-repeat: repeat-x;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:11px;
+    color:#999;
+    margin:0;
+    padding:0;
+    text-align:center; /* hack para o IE */
+}
+b{
+    font-weight: bold;
+    color: #666;
+}
+h1{
+    color: #666;
+    font-weight: bold;
+}
+a, a:visited {
+    color:#00BBFF;
+    text-decoration:none;
+    outline:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+ html .container{
+    height: 100%; /*hack para IE6 que trata height como min-height*/
+}
+#container{
+    min-height: 100%;
+    width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+    display: none;
+    margin-top: 15px;
+    text-align:left; /* "remédio" para o hack do IE */
+}
+#conteudo{
+    position: relative;
+    float: left;
+    width:100%;
+    margin:0 auto !important;
+    overflow:hidden;
+    background-color:#FFFFFF;
+    padding-top: 0px;
+    height: auto;
+    margin-bottom: 20px;
+}
+#conteudo div#botoesHome{
+    position: relative;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 1000px;
+    background: #FDFEFF; /* old browsers */
+    background: -moz-linear-gradient(top, #FDFEFF 1%, #ffffff 60%, #ffffff 97%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#FDFEFF), color-stop(60%,#ffffff), color-stop(97%,#ffffff)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDFEFF', endColorstr='#ffffff',GradientType=0 ); /* ie */
+}
+.sombraBrown{
+    -moz-box-shadow:0px 0px 10px 0px #857C6A;
+    -webkit-box-shadow:0px 0px 10px 0px #857C6A;
+}
+.sombraBlack{
+    -moz-box-shadow:0px 0px 5px 0px #999;
+    -webkit-box-shadow:0px 0px 5px 0px #999;
+}
+.cantosArredondados{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+#descConteudo{
+    position: relative;
+    float: left;
+    width: 500px;
+    height: auto;
+    text-align: justify;
+    font-size: 1.2em;
+}
+#meuTwitter{
+    background-image: url('../imagens/overlay-crecent.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    position: relative;
+    float: right;
+    width: 485px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+#barraFerramentas{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    width: 350px;
+}
+
+#rodape{
+    display: none;
+    position: relative;
+    bottom:0;
+    right: 0;
+    padding-top: 25px;
+    width:100%;
+    background-color: #E7F2FD;
+    background-image: url('../imagens/overlay-perf.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    text-align: center;
+    font-size: 1.1em;
+}
+#divTitle{
+    text-align: left;
+    font-size: 2.5em;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    color: #666;
+    border-bottom: 1px solid #EBEBEB;
+    font-family: 'Allerta', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #aaa;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1.2;
+}
+#subTitle{
+    text-align: left;
+    padding-left:150px;
+    font-size: 1.2em;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    color: #2b81af;
+}
+.citacao{
+    background-color: #FDFDFD;
+    border: 1px solid #F1F1F1;
+    padding: 5px 5px 5px 5px;
+}
+#divTwitter{
+    vertical-align: text-top;
+    position: relative;
+    float: right;
+    float: right;
+    margin-top: 5px;
+    margin-right: 1px;
+}
+#divLikedin{
+    vertical-align: top;
+    position: relative;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 2px;
+}
+#divConteudoNaoLocalizado{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align:left;
+    font-size: 14px;
+    color:#4f659f;
+    font-weight: bold;
+    margin-bottom: 1000px;
+}
+#divContato{
+    position: relative;
+    float: left;
+    width: 99%;
+    height: auto;
+    text-align: justify;
+    margin-bottom: 25px;
+    background-color: #FDFDFD;
+    border: 1px solid #F1F1F1;
+    padding: 5px 0 5px 5px;
+}
+#nomeRodape{
+  font-family: 'Reenie Beanie', serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 1.2;
+}
+.bannerPricipal{
+    background-color:transparent;
+    border-width:2px;
+    border-color:transparent;
+    -moz-border-radius:14px;
+    -webkit-border-radius:14px;
+    border-radius:14px;
+    /*IE DOES NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow:0px 0px 20px #000000;
+    -webkit-box-shadow:0px 0px 20px #000000;
+    box-shadow:0px 0px 20px #000000;
+    /*IE DOES NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+
+}
+#contatosFaleconosco{
+    background-color:transparent;
+    font-size: 13px;
+    padding-top: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    vertical-align: text-top;
+}
+#titleBarraContatos{
+    font-family: 'Allerta', serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1.2;
+    border-bottom: 2px dashed #EBEBEB;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

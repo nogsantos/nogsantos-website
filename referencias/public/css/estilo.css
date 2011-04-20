@@ -1,0 +1,76 @@
+/* 
+    Document   : estilo
+    Created on : Apr 13, 2011, 8:24:15 PM
+    Author     : fabricio
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+*{
+    margin: 10px 10px 10px 10px;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #2E7C06;
+}
+h1{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+#divMain{
+    border: 1px solid #696;
+    text-align: center;
+    width: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    background: #EEFF99;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EEFF99), to(#66EE33));
+    background: -moz-linear-gradient(#EEFF99, #66EE33);
+    background: linear-gradient(#EEFF99, #66EE33);
+    -pie-background: linear-gradient(#EEFF99, #66EE33);
+    behavior: url(/PIE.htc);
+}
+.barNav a {
+    font: 12px Verdana;
+    color: #2E7C06;
+    text-decoration: none;
+    background:  #EAFE96;
+    text-align: center;
+    padding: 1px 5px;
+    margin-right:1px;
+    border: 1px solid #999;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+}
+.barNav a:hover {
+    color: #666;
+    background: #FCFCFC;
+    border: 1px solid #666;
+}
+.botao{
+    cursor: pointer;
+    background-color: darkgreen;
+    color: #FCFCFC;
+    font-weight: bold;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-box-shadow: #EBFE97 0px 2px 3px;
+    -moz-box-shadow: #EBFE97 0px 2px 3px;
+    border: 0px;
+    padding: 5px 5px 5px 5px;
+}
