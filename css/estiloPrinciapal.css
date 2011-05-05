@@ -5,13 +5,12 @@
     Description: Folha de estilo principal
 */
 body{
-    background-image: url('../imagens/bg-body.jpg');
+    background-image: url('../imagens/bg-header.png');
     background-position: top;
     background-repeat: repeat-x;
-    background-color: #F1F8FE;
     font-family:Verdana, Geneva, sans-serif;
     font-size:11px;
-    color: #4C4C4D;
+    color:#999;
     margin:0;
     padding:0;
     text-align:center; /* hack para o IE */
@@ -25,7 +24,7 @@ h1{
     font-weight: bold;
 }
 a, a:visited {
-    color:#2874A2;
+    color:#00BBFF;
     text-decoration:none;
     outline:none;
 }
@@ -51,7 +50,7 @@ a:hover{
     width:100%;
     margin:0 auto !important;
     overflow:hidden;
-    background-color:transparent;
+    background-color:#FFFFFF;
     padding-top: 0px;
     height: auto;
     margin-bottom: 20px;
@@ -62,7 +61,10 @@ a:hover{
     padding-top: 15px;
     padding-bottom: 15px;
     width: 1000px;
-    background: transparent; /* old browsers */
+    background: #FDFEFF; /* old browsers */
+    background: -moz-linear-gradient(top, #FDFEFF 1%, #ffffff 60%, #ffffff 97%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#FDFEFF), color-stop(60%,#ffffff), color-stop(97%,#ffffff)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDFEFF', endColorstr='#ffffff',GradientType=0 ); /* ie */
 }
 .sombraBrown{
     -moz-box-shadow:0px 0px 10px 0px #857C6A;
@@ -103,27 +105,25 @@ a:hover{
 }
 
 #rodape{
-    background-image: url('../imagens/bg-footer-wrap.jpg');
-    background-position: top;
-    background-repeat: repeat-x;
     display: none;
     position: relative;
     bottom:0;
     right: 0;
     padding-top: 25px;
     width:100%;
-    background-color: transparent;
+    background-color: #E7F2FD;
+    background-image: url('../imagens/overlay-perf.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
     text-align: center;
     font-size: 1.1em;
-    height: 255px;
-    color: #DDDDDD;
 }
 #divTitle{
     text-align: left;
     font-size: 2.5em;
     width: 100%;
     margin: 10px 0 20px 0;
-    color: #2874A2;
+    color: #666;
     border-bottom: 1px solid #EBEBEB;
     font-family: 'Allerta', serif;
     font-size: 36px;
@@ -145,7 +145,7 @@ a:hover{
     color: #2b81af;
 }
 .citacao{
-    background-color: transparent;
+    background-color: #FDFDFD;
     border: 1px solid #F1F1F1;
     padding: 5px 5px 5px 5px;
 }
@@ -181,13 +181,13 @@ a:hover{
     height: auto;
     text-align: justify;
     margin-bottom: 25px;
-    background-color: transparent;
+    background-color: #FDFDFD;
+    border: 1px solid #F1F1F1;
     padding: 5px 0 5px 5px;
 }
 #nomeRodape{
   font-family: 'Reenie Beanie', serif;
   font-size: 30px;
-  font-weight: bold;
   font-style: normal;
   font-weight: 400;
   text-shadow: none;
@@ -196,7 +196,36 @@ a:hover{
   letter-spacing: 0em;
   word-spacing: 0em;
   line-height: 1.2;
-  color: #FFFFFF;
+}
+.bannerPricipal{
+    background-color:transparent;
+    border-width:2px;
+    border-color:transparent;
+    -moz-border-radius:14px;
+    -webkit-border-radius:14px;
+    border-radius:14px;
+}
+#contatosFaleconosco{
+    background-color:transparent;
+    font-size: 13px;
+    padding-top: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    vertical-align: text-top;
+}
+#titleBarraContatos{
+    font-family: 'Allerta', serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1.2;
+    border-bottom: 2px dashed #EBEBEB;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 .bannerPricipal{
     background-color:transparent;
@@ -240,4 +269,32 @@ a:hover{
   color: #FFFFFF;
   margin: 5px 0 10px 0;
   cursor: pointer;
+}
+#home{
+    width: 150px;
+    height: 40px;
+}
+#curriculo{
+    width: 150px;
+    height: 40px;
+}
+#contato{
+    width: 150px;
+    height: 40px;
+}
+#pessoal{
+    width: 150px;
+    height: 40px;
+}
+#reduz_fonte{
+    cursor: pointer;
+}
+#aumenta_fonte{
+    cursor: pointer;
+}
+#printDiv{
+    cursor: pointer;
+}
+#favourito{
+    cursor: pointer;
 }

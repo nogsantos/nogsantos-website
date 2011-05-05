@@ -1,4 +1,4 @@
-var tweetUsers = ['nogsantos','portalbrasil','realjabor','silva_marina','millorfernandes','ProgramadorREAL'];
+var tweetUsers = ['nogsantos','portalbrasil'];
 var buildString = "";
 
 $(document).ready(function(){

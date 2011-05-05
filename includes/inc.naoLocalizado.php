@@ -6,5 +6,5 @@
 
 ?>
 <div id="divConteudoNaoLocalizado">
-    Desculpe, Conte&uacute;do N&atilde;o Localizado.
+    Desculpe, em desenvolvimento.
 </div>

@@ -10,6 +10,8 @@
 <script type="text/javascript" src="js/jq-corner.js"></script>
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="twitter/script.js"></script>
 <script type="text/javascript">
     jQuery(function(){
         $(window).load(function(){
@@ -46,6 +48,16 @@
                     $("#descConteudo").css({"font-size" : fonte+"em","line-height" : line+"em"});
                 }
             });
+            /**
+             * Descrição: Scroller do menu acompanhando o ralamento da página.
+             **/
+            $.waypoints.settings.scrollThrottle = 30;
+            $('#container').waypoint(function(event, direction) {
+                offset: '-100%'
+            }).find('#botoesHome').waypoint(function(event, direction) {
+                $(this).parent().toggleClass('sticky', direction === "down");
+                event.stopPropagation();
+            });
         });
         /**
          * Definindo o estilo dos formulários
@@ -59,10 +71,13 @@
           * Descrição: Link para home
           *
           **/
-         $("#linkHome").click(function(){
+         $(".linkHome").click(function(){
              window.open("home.php",'_self');
          });
-    });//(jQuery)
+         $("#imgValidator").click(function(){
+             window.open("http://validator.w3.org/check?uri=referer",'_blank');
+         })
+    });
     /**
      *
      * Descrição: Imprimir conteúdo da div

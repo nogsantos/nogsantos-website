@@ -53,9 +53,9 @@ class FaleComigo{
                        <br/>Email: {$this->getEmail()}
                        <br/>Mensagem: {$this->getMensagem()}";
 	$mail->setHtml($sMensagem);
-	if($mail->send(array("nogsantos@gmail.com"))){
+	if($mail->send(array("fabricio@nogsantos.com.br"))){
             $mailResp = new htmlMimeMail();
-            $mailResp->setFrom("<nogsantos@gmail.com>");
+            $mailResp->setFrom("<fabricio@nogsantos.com.br>");
             $mailResp->setSubject("Contato nogsantos.com.br");
             $sMensagemResp = " <br/>Olá {$this->getNomeEmpresa()}!<br />Agradeço seu contato, retornarei assim que possível.<br/>
                                <br/>Data: {$this->getData()}
